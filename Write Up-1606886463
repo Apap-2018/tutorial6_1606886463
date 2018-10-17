@@ -1,0 +1,10 @@
+Write Up:
+
+1. Karena objek flight terkait dengan objek pilot dengan not null constraint sehingga kita bisa memastikan objek terinstansiasi dengan baik dan objek flight dimiliki oleh objek pilot.
+2. Nilai Pilot menjadi NULL dan terdapat not null constraint sehingga objek tidak bisa terinstasiasi
+3. Agar Mockito me lakukan mock pada method findByFlightNumber sehingga mereturn object flight yang sesuai dengan mock
+4. Agar Mockito me lakukan mock pada method getFlightDetailByFlightNumber sehingga mereturn object flight yang sesuai dengan mock, sama seperti nomor 3 tetapi pada class service
+5. Mengambil status dari mvc mock lalu mengekspektasi (memastikan) ia tampil (CODE 200)
+6. Mengambil hasil http request json flight number dari mvc mock lalu mencocokannya dengan attribute flight number pada object flight
+7. @ResponseBody memberitahu controller agar data dapat diserialisasi menjadi HTTP response seperti JSON pada test kali ini
+8. Melebihi load server, koneksi mengalami request time out karena server masih memproses request yang lain
